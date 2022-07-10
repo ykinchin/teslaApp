@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
+
+.range {
+  width: 100%;
+  height: 67vh;
+  position: relative;
+  background-color: rgba(184, 28, 33, 1);
+  display: flex;
+  font-family: "Goldman", cursive;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 45vw;
+    bottom: 1vh;
+    width: 20%;
+    height: 96%;
+    display: block;
+    background-color: rgba(184, 28, 33, 0.8);
+    filter: blur(20px);
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: url("../../images/range-bg.png") center / cover no-repeat;
+    display: block;
+    opacity: 0.3;
+  }
+
+  .range_graph {
+    &::after {
+      content: "";
+      display: block;
+      background-color: black;
+      width: 400px;
+      height: 400px;
+      transform: rotate(45deg);
+      position: absolute;
+      left: -200px;
+      top: 20vh;
+      z-index: 2;
+    }
+    .range__img {
+      position: absolute;
+      z-index: 3;
+    }
+  }
+
+  .range_content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: 20%;
+    color: white;
+
+    .range__header {
+      text-align: center;
+
+      .range__title {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 2px;
+      }
+
+      .range__subtitle {
+        font-size: 4rem;
+        margin: 0;
+        font-family: "Goldman";
+        letter-spacing: 4px;
+      }
+    }
+    .range__info {
+      width: 600px;
+      text-align: justify;
+      font-size: 1.5rem;
+    }
+
+    .range__btn {
+      font-family: "Goldman";
+      background-color: rgba(182, 180, 50, 1);
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: black;
+        transition: 0.5s ease;
+      }
+    }
+  }
+}

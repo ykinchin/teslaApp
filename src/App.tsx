@@ -6,12 +6,12 @@ import Body from "./Pages/Body";
 import Interior from "./Pages/Interior";
 import Launch from "./Pages/Launch";
 import Main from "./Pages/Main/Main";
-import Range from "./Pages/Range";
+import Range from "./Pages/Range/Range";
 import Series from "./Pages/Series";
 
 function App() {
   return (
-    <div>
+    <>
       <Navigation />
       <Routes>
         <Route path='/' element={<Main />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path='/interior' element={<Interior />} />
         <Route path='/launch' element={<Launch />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

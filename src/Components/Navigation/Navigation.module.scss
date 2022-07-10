@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
 .header {
   position: relative;
+  font-family: "Gowun Dodum", sans-serif;
 
-.sidebar {
+  .sidebar {
     position: absolute;
-}
+  }
 
   .navbar {
     width: 100%;
