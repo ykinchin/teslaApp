@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./Components/Navigation/Navigation";
-import Battery from "./Pages/Battery";
-import Body from "./Pages/Body";
+import Battery from "./Pages/Battery/Battery";
+import Body from "./Pages/Body/Body";
 import Interior from "./Pages/Interior";
 import Launch from "./Pages/Launch";
 import Main from "./Pages/Main/Main";

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
 import styles from "./Range.module.scss";
 import model3 from "../../images/tesla-3-big.png";
 import TeslaHeader from "../../Components/TeslaHeader/TeslaHeader";
 import { Link } from "react-router-dom";
 
-const Range = () => {
+const Range: FC = () => {
   return (
     <>
       <TeslaHeader />
@@ -24,7 +24,7 @@ const Range = () => {
             thermal architecture allows faster charging and gives you more power
             and endurance in all conditions.
           </p>
-          <Link to='battery'>
+          <Link to='/battery'>
             <button className={styles.range__btn}>Battery Power</button>
           </Link>
         </div>

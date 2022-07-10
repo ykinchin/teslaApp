@@ -1,0 +1,37 @@
+.button__white {
+  width: max-content;
+  align-self: center;
+  font-size: 1.2rem;
+  padding: 0.5rem 4rem;
+  color: white;
+  background-color: inherit;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+  }
+}
+
+.button__black {
+  width: max-content;
+  align-self: center;
+  font-size: 1.2rem;
+  padding: 0.5rem 4rem;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+  &:hover {
+    color: white;
+    background-color: inherit;
+    transition: 0.5s ease;
+  }
+}

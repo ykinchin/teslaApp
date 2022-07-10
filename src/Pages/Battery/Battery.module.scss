@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Goldman&display=swap");
+
+.wrapper {
+  box-sizing: border-box;
+  background: url("../../images/battery-graph.png") 0 0 no-repeat;
+  width: 100%;
+  height: 82vh;
+  background-size: cover;
+  font-family: "Goldman", cursive;
+
+  .battery {
+    .battery__tesla {
+      position: absolute;
+      right: 0;
+      width: 450px;
+    }
+    .battery__content {
+      margin-top: 10vh;
+      width: 70%;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+
+      .battery__info {
+        max-width: 500px;
+        font-size: 1.5rem;
+
+        .battery__header {
+          margin-bottom: 4rem;
+          .battery__subtitle {
+            font-size: 2rem;
+            margin: 0;
+          }
+
+          .battery__title {
+            font-size: 3rem;
+            margin: 0;
+          }
+        }
+      }
+      .charge {
+        display: flex;
+        flex-direction: column;
+
+        .charge_battery {
+          display: flex;
+          align-items: center;
+          font-size: 3rem;
+
+          p {
+            width: 250px;
+            text-align: center;
+          }
+
+          .charge__img {
+            .charge__icon__full {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 10px;
+              height: 250px;
+              width: 140px;
+              text-decoration: none;
+              border: 2px solid white;
+              background-image: linear-gradient(
+                transparent 45%,
+                rgba(103, 134, 37, 1) 50%
+              );
+              background-size: 200% 200%;
+              background-repeat: no-repeat;
+              transition: 6s;
+              background-position: 0 100%;
+
+              &::before {
+                position: absolute;
+                top: -30px;
+                content: "";
+                display: block;
+                border: 1px solid white;
+                border-radius: 7px 7px 0 0;
+                width: 40px;
+                height: 20px;
+              }
+            }
+            .charge__icon {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 10px;
+              height: 250px;
+              width: 140px;
+              text-decoration: none;
+              border: 2px solid white;
+              background-image: linear-gradient(
+                transparent 45%,
+                rgba(103, 134, 37, 1) 50%
+              );
+              background-size: 200% 200%;
+              background-repeat: no-repeat;
+              transition: 6s;
+
+              &::before {
+                position: absolute;
+                top: -30px;
+                content: "";
+                display: block;
+                border: 1px solid white;
+                border-radius: 7px 7px 0 0;
+                width: 40px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        .charge__info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .charge__title {
+            font-family: "Faster One", cursive;
+            font-size: 2.5rem;
+            letter-spacing: 10px;
+            margin: 2vh 0 0;
+          }
+
+          .charge__subtitle {
+            margin: 0;
+            font-size: 5rem;
+          }
+
+          .charge__text {
+            margin: 0;
+            font-size: 2rem;
+          }
+
+          .charge__btn {
+            font-family: "Goldman";
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-color: rgba(103, 134, 37, 1);
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            background-image: linear-gradient(transparent 50%, white 50%);
+            background-size: 200% 200%;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            transition: 0.5s;
+            border: none;
+            &:hover {
+              background-position: 0 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
