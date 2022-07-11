@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import styles from "./Sidebar.module.scss";
@@ -9,7 +9,7 @@ import modely from "../../images/model-y.png";
 import modelx from "../../images/model-x.png";
 import model3 from "../../images/model-3.png";
 
-const Sidebar = () => {
+const Sidebar: FC = () => {
   const [isToggleOpened, setIsToggleOpened] = useState<boolean>(false);
 
   return (

@@ -1,15 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./Components/Navigation/Navigation";
 import Battery from "./Pages/Battery/Battery";
 import Body from "./Pages/Body/Body";
-import Interior from "./Pages/Interior";
+import Interior from "./Pages/Interior/Interior";
 import Launch from "./Pages/Launch";
 import Main from "./Pages/Main/Main";
 import Range from "./Pages/Range/Range";
 import Series from "./Pages/Series";
 
-function App() {
+const App: FC = () => {
   return (
     <>
       <Navigation />
@@ -24,6 +24,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;

@@ -1,8 +1,12 @@
 import React from 'react'
+import Slider from '../../Components/Slider/Slider'
+
 
 const Interior = () => {
+
+
   return (
-    <div>Interior</div>
+    <Slider/>
   )
 }
 

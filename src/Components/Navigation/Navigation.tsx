@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 
 import Sidebar from "../Sidebar/Sidebar";
 import styles from "./Navigation.module.scss";
 
-const Navigation = () => {
+const Navigation: FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.sidebar}>
