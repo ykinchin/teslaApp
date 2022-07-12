@@ -4,10 +4,10 @@ import Navigation from "./Components/Navigation/Navigation";
 import Battery from "./Pages/Battery/Battery";
 import Body from "./Pages/Body/Body";
 import Interior from "./Pages/Interior/Interior";
-import Launch from "./Pages/Launch";
 import Main from "./Pages/Main/Main";
 import Range from "./Pages/Range/Range";
-import Series from "./Pages/Series";
+import Series from "./Pages/Models/Models";
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 
 const App: FC = () => {
   return (
@@ -20,7 +20,7 @@ const App: FC = () => {
         <Route path='/battery' element={<Battery />} />
         <Route path='/body' element={<Body />} />
         <Route path='/interior' element={<Interior />} />
-        <Route path='/launch' element={<Launch />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </>
   );

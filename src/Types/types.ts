@@ -4,3 +4,10 @@ export interface ISlider {
   index:number;
   style:string
 }
+
+export interface IContent {
+  title:string,
+  text:string,
+  imgAlt:string,
+  imgSrc:string,
+}

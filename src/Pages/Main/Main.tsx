@@ -1,11 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./main.module.scss";
 
-
-const Main = () => {
+const Main: FC = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.block}><div></div><div></div></div>
+      <div className={styles.block}>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };

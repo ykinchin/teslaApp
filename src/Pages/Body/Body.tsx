@@ -2,13 +2,14 @@ import React, { FC } from "react";
 
 import styles from "./Body.module.scss";
 import side from "../../images/side.png";
-import overview1 from "../../images/overview-1.png";
-import overview2 from "../../images/overview-2.png";
-import overview3 from "../../images/overview-3.png";
 import safety from "../../images/safety.png";
 import Button from "../../Components/CustomButton/Button";
+import CustomGrid from "../../Components/CustomGrid/CustomGrid";
+import { BODY_DATA } from "./BODY_DATA";
 
 const Body: FC = () => {
+  const bodyContent = BODY_DATA;
+
   return (
     <main className={styles.body}>
       <section className={styles.front}>
@@ -33,29 +34,7 @@ const Body: FC = () => {
         </div>
       </section>
       <section className={styles.overview}>
-        <div className={styles.overview__wrapper}>
-          <div className={styles.overview__block}>
-            <p>Relentless Performance</p>
-            <p>
-              Staggered, performance wheels and tires keep the car planted and
-              help transfer maximum power down to the road.
-            </p>
-          </div>
-          <img src={overview1} alt='tesla' />
-          <img src={overview2} alt='tesla' />
-          <div className={styles.overview__block}>
-            <p>Optimized Aerodynamics</p>
-            <p>
-              Attention to detail on all exterior surfaces makes Model S the
-              most aerodynamic production car on Earth.
-            </p>
-          </div>
-          <div className={styles.overview__block}>
-            <p>Refined Styling</p>
-            <p>An iconic silhouette meets refreshed, elegant proportions.</p>
-          </div>
-          <img src={overview3} alt='tesla' />
-        </div>
+        <CustomGrid content={bodyContent} />
       </section>
       <section className={styles.safety}>
         <div className={styles.safety__info}>

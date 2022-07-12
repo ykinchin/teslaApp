@@ -1,0 +1,36 @@
+.grid {
+  .grid_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    align-items: center;
+    justify-items: center;
+
+    div {
+      text-align: center;
+      padding: 0 40px;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        width: 550px;
+      }
+    }
+
+    img {
+      width: 550px;
+    }
+
+    &:nth-child(2n) {
+      div {
+        grid-row: 1;
+        grid-column: 2;
+      }
+      img {
+        grid-row: 1;
+        grid-column: 1;
+      }
+    }
+  }
+}

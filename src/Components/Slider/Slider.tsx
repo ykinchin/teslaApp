@@ -38,10 +38,10 @@ const Slider: FC = () => {
         );
       })}
       <button onClick={nextSlide} className={styles.slide__next}>
-        <AiOutlineArrowLeft size={35}/>
+        <AiOutlineArrowLeft size={35} />
       </button>
       <button onClick={prevSlide} className={styles.slide__prev}>
-        <AiOutlineArrowRight size={35}/>
+        <AiOutlineArrowRight size={35} />
       </button>
     </div>
   );

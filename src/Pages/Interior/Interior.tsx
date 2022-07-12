@@ -1,13 +1,21 @@
-import React from 'react'
-import Slider from '../../Components/Slider/Slider'
+import React, { FC } from "react";
 
+import styles from './Interior.module.scss'
+import Slider from "../../Components/Slider/Slider";
+import CustomGrid from "../../Components/CustomGrid/CustomGrid";
+import { INTERIOR_DATA } from "./INTERIOR_DATA";
 
-const Interior = () => {
-
+const Interior: FC = () => {
+const interiorContent = INTERIOR_DATA;
 
   return (
-    <Slider/>
-  )
-}
+    <main className={styles.wrapper}>
+      <Slider />
+      <section className={styles.interior}>
+        <CustomGrid content={interiorContent}/>
+      </section>
+    </main>
+  );
+};
 
-export default Interior
+export default Interior;
