@@ -4,12 +4,10 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import styles from "./Sidebar.module.scss";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
-import models from "../../images/model-s.png";
-import modely from "../../images/model-y.png";
-import modelx from "../../images/model-x.png";
-import model3 from "../../images/model-3.png";
+import { MODELS_DATA } from "../../Pages/Models/MODELS_DATA";
 
 const Sidebar: FC = () => {
+  const models = MODELS_DATA;
   const [isToggleOpened, setIsToggleOpened] = useState<boolean>(false);
 
   return (
@@ -21,26 +19,13 @@ const Sidebar: FC = () => {
         onClick={() => console.log(isToggleOpened)}
       >
         <ul className={styles.sidebar_models}>
-          <li>
-            <Link to=''>
-              <img src={model3} alt='' />
-            </Link>
-          </li>
-          <li>
-            <Link to=''>
-              <img src={modely} alt='' />
-            </Link>
-          </li>
-          <li>
-            <Link to=''>
-              <img src={modelx} alt='' color='white' />
-            </Link>
-          </li>
-          <li>
-            <Link to=''>
-              <img src={models} alt='' />
-            </Link>
-          </li>
+          {models.map((model) => (
+            <li>
+              <Link to={`/models/${model.modelName}`}>
+                <img src={model.modelIcon} alt={model.iconAlt} />
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div

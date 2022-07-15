@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap");
+
+.modelPage {
+  .banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: "Gowun Batang", serif;
+
+    .banner__img {
+      object-fit: cover;
+      position: relative;
+      top: -150px;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .banner__title {
+      position: absolute;
+      margin: 0;
+      z-index: 1;
+      font-size: 3rem;
+      color: white;
+    }
+  }
+
+  .params {
+    box-sizing: border-box;
+    padding: 5% 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .params__wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .params__img {
+      height: 40vh;
+      padding: 0 15%;
+    }
+
+    .params_info {
+      color: white;
+      list-style: none;
+      font-size: 1.2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 6rem;
+
+      .params__title {
+        border: 1px;
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      b {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

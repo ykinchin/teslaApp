@@ -5,6 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import styles from "./Navigation.module.scss";
 
 const Navigation: FC = () => {
+
   return (
     <header className={styles.header}>
       <div className={styles.sidebar}>
